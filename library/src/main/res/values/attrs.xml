@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 如果两个自定义View组件定义了相同的属性名称，就要抽出来写，否则会报
+  Found item Attr/solidColor more than one time
+  -->
+    <attr name="strokeWith" format="dimension"></attr>
+    <attr name="solidColor" format="color"></attr>
+    <attr name="strokeColor" format="color"></attr>
+    <attr name="radius" format="dimension"></attr>
+    <attr name="topLeftRadius" format="dimension"></attr>
+    <attr name="topRightRadius" format="dimension"></attr>
+    <attr name="bottomLeftRadius" format="dimension"></attr>
+    <attr name="bottomRightRadius" format="dimension"></attr>
+    <attr name="startColor" format="color"></attr>
+    <attr name="endColor" format="color"></attr>
+    <attr name="gradientMode" format="enum">
+        <enum name="topToBottom" value="0"/>
+        <enum name="bottomToTop" value="1"/>
+        <enum name="leftToRight" value="2"/>
+        <enum name="rightToLeft" value="3"/>
+    </attr>
+    <declare-styleable name="MySuperTextView">
+        <attr name="solidColor"/>
+        <attr name="strokeColor"/>
+        <attr name="isTouch" format="boolean"></attr>
+        <!--按下填充色-->
+        <attr name="solidTouchColor" format="color"></attr>
+        <!---按下边框色-->
+        <attr name="strokeTouchColor" format="color"></attr>
+        <!--文字按下颜色 -->
+        <attr name="textTouchColor" format="color"></attr>
+        <!--按下渐变开始颜色 -->
+        <attr name="startTouchColor" format="color"></attr>
+        <!--按下渐变结束颜色 -->
+        <attr name="endTouchColor" format="color"></attr>
+        <attr name="startColor" />
+        <attr name="endColor" />
+        <attr name="strokeWith"/>
+        <attr name="radius"/>
+        <attr name="topLeftRadius"/>
+        <attr name="topRightRadius"/>
+        <attr name="bottomLeftRadius"/>
+        <attr name="bottomRightRadius"/>
+        <attr name="gradientMode"/>
+        <attr name="shapeTpe" format="enum">
+            <enum name="rectangle" value="0"></enum>
+            <enum name="oval" value="1"></enum>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SuperEditText">
+        <attr name="solidColor"/>
+        <attr name="strokeColor"/>
+        <attr name="strokeWith"/>
+        <attr name="radius"/>
+        <attr name="topLeftRadius"/>
+        <attr name="topRightRadius"/>
+        <attr name="bottomLeftRadius"/>
+        <attr name="bottomRightRadius"/>
+    </declare-styleable>
+    <declare-styleable name="SuperLinearLayout">
+        <attr name="solidColor" />
+        <attr name="strokeColor" />
+        <attr name="startColor" />
+        <attr name="endColor" />
+        <attr name="strokeWith" />
+        <attr name="radius" />
+        <attr name="topLeftRadius" />
+        <attr name="topRightRadius" />
+        <attr name="bottomLeftRadius" />
+        <attr name="bottomRightRadius" />
+        <attr name="gradientMode"/>
+
+    </declare-styleable>
+    <declare-styleable name="SuperConstraintLayout">
+        <attr name="solidColor" />
+        <attr name="strokeColor" />
+        <attr name="startColor" />
+        <attr name="endColor" />
+        <attr name="strokeWith" />
+        <attr name="radius" />
+        <attr name="topLeftRadius" />
+        <attr name="topRightRadius" />
+        <attr name="bottomLeftRadius" />
+        <attr name="bottomRightRadius" />
+        <attr name="gradientMode"/>
+    </declare-styleable>
+    <declare-styleable name="SuperFrameLayout">
+        <attr name="solidColor" />
+        <attr name="strokeColor" />
+        <attr name="startColor" />
+        <attr name="endColor" />
+        <attr name="strokeWith" />
+        <attr name="radius" />
+        <attr name="topLeftRadius" />
+        <attr name="topRightRadius" />
+        <attr name="bottomLeftRadius" />
+        <attr name="bottomRightRadius" />
+        <attr name="gradientMode"/>
+    </declare-styleable>
+</resources>
