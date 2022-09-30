@@ -1,5 +1,15 @@
 # SuperTextView
-
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+```
+implementation 'com.github.hong-yong:SuperTextView:1.0.3'
+```
 集成本项目可添加依赖库 implementation 'com.github.hong-yong:SuperTextView:1.0.3'
 
 解决项目中频繁创建shape xml资源文件，造成drawable下大量xml资源堆积得不到很好的复用，文件命名各式各样，不好查早到是否有你要的shape资源
