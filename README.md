@@ -1,6 +1,6 @@
 # SuperTextView
 
-集成本项目可添加依赖库 implementation 'com.github.hong-yong:SuperTextView:V1.0.2'
+集成本项目可添加依赖库 implementation 'com.github.hong-yong:SuperTextView:1.0.3'
 
 解决项目中频繁创建shape xml资源文件，造成drawable下大量xml资源堆积得不到很好的复用，文件命名各式各样，不好查早到是否有你要的shape资源
 本框架支持常见的组件库TextView,EditText,FrameLayout,LinearLayout,ConstraintLayout,RelativeLayout对应的封装组件如下：SuperTextView，SuperEditText，
