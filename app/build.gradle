@@ -37,4 +37,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation project(':library')
+
+//    implementation 'com.github.hong-yong:SuperTextView:V1.0.2'
 }

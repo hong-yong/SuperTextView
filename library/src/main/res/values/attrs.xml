@@ -97,4 +97,14 @@
         <attr name="bottomRightRadius" />
         <attr name="gradientMode"/>
     </declare-styleable>
+    <declare-styleable name="SuperRelativeLayout">
+        <attr name="solidColor" />
+        <attr name="strokeColor" />
+        <attr name="strokeWith" />
+        <attr name="radius" />
+        <attr name="topLeftRadius" />
+        <attr name="topRightRadius" />
+        <attr name="bottomLeftRadius" />
+        <attr name="bottomRightRadius" />
+    </declare-styleable>
 </resources>

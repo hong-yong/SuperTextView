@@ -12,6 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:radius="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         app:gradientMode="leftToRight"
         app:startColor="#FF0000"
         app:endColor="#0000FF"
@@ -28,15 +30,18 @@
             />
     </com.shape.library.SuperConstraintLayout>
     <com.shape.library.SuperLinearLayout
-
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         app:radius="20dp"
         app:gradientMode="leftToRight"
         app:startColor="#FF0000"
         app:endColor="#0000FF"
         android:gravity="center"
+        app:strokeWith="1dp"
+        app:strokeColor="@color/black"
         >
         <TextView
 
@@ -47,26 +52,46 @@
             />
     </com.shape.library.SuperLinearLayout>
     <com.shape.library.SuperFrameLayout
-
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:radius="20dp"
         app:gradientMode="leftToRight"
         app:startColor="#FF0000"
         app:endColor="#0000FF"
-
+        app:topLeftRadius="20dp"
+        app:bottomRightRadius="20dp"
         >
         <TextView
             android:textColor="#ffffff"
-            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical|center"
             android:text="我是FrameLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
     </com.shape.library.SuperFrameLayout>
-
+    <com.shape.library.SuperRelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:solidColor="@color/black"
+        app:topLeftRadius="20dp"
+        app:bottomRightRadius="20dp"
+        >
+        <TextView
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:text="我是RelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </com.shape.library.SuperRelativeLayout>
     <com.shape.library.SuperEditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -77,28 +102,52 @@
         app:strokeWith="1dp"
         android:hint="我是EditText请输入文字"
         />
+
     <com.shape.library.SuperTextView
+        android:id="@+id/tv_1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:radius="20dp"
         android:gravity="center"
-        app:solidColor="#ffffff"
-        app:strokeColor="@color/black"
-        app:strokeWith="1dp"
-        android:hint="我是TextView"
+        app:radius="12dp"
+        app:solidColor="#4880ff"
+        app:isTouch="true"
+        app:solidTouchColor="#ffccdd"
+        android:textColor="#ffffff"
+        android:text="我是TextView按压变色"
         />
     <com.shape.library.SuperTextView
+        android:id="@+id/tv_2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:radius="20dp"
         android:gravity="center"
-        app:startColor="#FF0000"
-        app:endColor="#FFFF00"
-        app:startTouchColor="#FFBB00"
-        app:endTouchColor="#FFAAAA"
-
-        android:hint="我是TextView"
+        app:startColor="#ffFF0000"
+        app:endColor="#ffAECFFF"
+        app:startTouchColor="#ffCC80ff"
+        app:endTouchColor="#ff71aaff"
+        app:radius="8dp"
+        app:isTouch="true"
+        android:text="我是TextView按压渐变"
+        android:textColor="#ffffff"
+        />
+    <com.shape.library.SuperTextView
+        android:id="@+id/tv_3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:solidColor="#FF0000"
+        app:solidTouchColor="#0000FF"
+        app:radius="8dp"
+        app:isTouch="false"
+        android:text="我是TextView设置setEnabled变色"
+        android:textColor="#ffffff"
         />
 </LinearLayout>

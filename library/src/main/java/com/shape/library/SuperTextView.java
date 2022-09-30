@@ -157,7 +157,7 @@ public class SuperTextView extends AppCompatTextView {
     //这里实现按压事件
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        if (solidTouchColor != 0||paintStroke!=null|| textTouchColor!=0){
+
             if(isTouch){
                 if (event.getAction() == MotionEvent.ACTION_DOWN||event.getAction() == MotionEvent.ACTION_MOVE) {
                     if(event.getAction() == MotionEvent.ACTION_DOWN)
@@ -165,10 +165,10 @@ public class SuperTextView extends AppCompatTextView {
                 } else {
                     drowBackgroud(false);
                 }
+                return super.onTouchEvent(event);
             }
-            return super.onTouchEvent(event);
 
-        }
+
         else{
             return super.onTouchEvent(event);
         }
